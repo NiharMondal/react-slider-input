@@ -19,11 +19,11 @@ This package is designed as a modern alternative to react-slider with minimal AP
 ### 📦 Installation
 
 ```bash
-npm install react-slider-input
+npm install react-slider-range
 # or
-yarn add react-slider-input
+yarn add react-slider-range
 # or
-pnpm add react-slider-input
+pnpm add react-slider-range
 ```
 
 ### 🚀 Usage
@@ -31,7 +31,9 @@ pnpm add react-slider-input
 **1. Basic Example**
 
 ```bash
+import "react-slider-input/dist/slider.css";
 import { Slider } from "react-slider-input";
+
 
 export default function Example() {
   return (
@@ -49,7 +51,7 @@ export default function Example() {
 
 ```bash
 import { useState } from "react";
-import { Slider } from "react-slider-input";
+import { Slider } from "react-slider-range";
 
 export default function ControlledExample() {
   const [value, setValue] = useState<[number, number]>([30, 70]);
