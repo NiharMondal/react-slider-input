@@ -51,7 +51,8 @@ export default function Example() {
 
 ```bash
 import { useState } from "react";
-import { Slider } from "react-slider-range";
+import "react-slider-input/dist/slider.css";
+import { Slider } from "react-slider-input";
 
 export default function ControlledExample() {
   const [value, setValue] = useState<[number, number]>([30, 70]);
