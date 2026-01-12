@@ -31,8 +31,8 @@ pnpm add react-slider-range
 **1. Basic Example**
 
 ```bash
-import "react-slider-input/dist/slider.css";
-import { Slider } from "react-slider-input";
+import "react-slider-range/dist/slider.css";
+import { Slider } from "react-slider-range";
 
 
 export default function Example() {
@@ -51,8 +51,8 @@ export default function Example() {
 
 ```bash
 import { useState } from "react";
-import "react-slider-input/dist/slider.css";
-import { Slider } from "react-slider-input";
+import "react-slider-range/dist/slider.css";
+import { Slider } from "react-slider-range";
 
 export default function ControlledExample() {
   const [value, setValue] = useState<[number, number]>([30, 70]);
