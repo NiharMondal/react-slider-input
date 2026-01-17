@@ -1,0 +1,65 @@
+:root {
+    /* Primary theme colors */
+    --slider-range-bg: #2563eb; /* Blue-600 */
+    --slider-track-bg: #e5e7eb; /* Gray-200 */
+
+    /* Focus ring */
+    --slider-focus-ring-1: #3b82f6; /* Blue-500 */
+    --slider-focus-ring-2: #bfdbfe; /* Blue-200 */
+}
+
+/* Track */
+.range-slider-track {
+    position: relative;
+    height: 8px;
+    border-radius: 9999px;
+    background-color: var(--slider-track-bg, #e5e7eb);
+}
+
+/* Active range */
+.range-slider-range {
+    position: absolute;
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--slider-range-bg, #2563eb);
+}
+
+/* Thumb */
+.range-slider-thumb {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 9999px;
+    border: 3px solid var(--slider-range-bg, #2563eb);
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+}
+
+/* Hover */
+.range-slider-thumb:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Focus (keyboard accessibility) */
+.range-slider-thumb:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--slider-focus-ring-1, #3b82f6),
+        0 0 0 4px var(--slider-focus-ring-2, #bfdbfe);
+}
+
+/* Tooltip */
+.range-slider-tooltip {
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111827;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
